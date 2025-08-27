@@ -2,26 +2,46 @@
   "name": "triviab",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "node --experimental-transform-types server.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "@libsql/client": "0.15.12",
+    "ioredis": "5.7.0",
+    "next": "15.5.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "4.8.1",
+    "zustand": "5.0.8"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.6",
-    "@eslint/eslintrc": "^3"
-  }
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.34.0",
+    "@next/eslint-plugin-next": "15.5.0",
+    "@tailwindcss/postcss": "4",
+    "@types/node": "22.17.2",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "eslint": "9",
+    "eslint-config-next": "15.5.0",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "globals": "16.3.0",
+    "tailwindcss": "4",
+    "typescript": "5"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ],
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide"
+    ]
+  },
+  "packageManager": "pnpm@10.15.0+sha512.486ebc259d3e999a4e8691ce03b5cac4a71cbeca39372a9b762cb500cfdf0873e2cb16abe3d951b1ee2cf012503f027b98b6584e4df22524e0c7450d9ec7aa7b"
 }
