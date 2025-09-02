@@ -46,3 +46,5 @@ next-env.d.ts
 pnpm-lock.yaml
 package-lock.json
 
+# bruno
+bruno-req
