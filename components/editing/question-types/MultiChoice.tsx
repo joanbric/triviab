@@ -1,4 +1,3 @@
-import DeleteIcon from '@/components/icons/Delete'
 import DislikeIcon from '@/components/icons/Dislike'
 import LikeIcon from '@/components/icons/Like'
 import { useTriviabState } from '@/state/triviab'
@@ -16,7 +15,6 @@ export default function MultiChoice({
   console.log('Las options son: ',options)
   const updateOption = useTriviabState(useShallow((state) => state.updateOption))
   const setCorrectOption = useTriviabState(useShallow((state) => state.setCorrectOption))
-  const removeOption = useTriviabState(useShallow((state) => state.removeOption))
   
   return options && options.map((option) => (
     <li key={option.id} className="flex gap-5">

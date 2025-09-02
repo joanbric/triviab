@@ -1,4 +1,5 @@
-const res = await fetch('http://localhost:3000/api/triviab')
+console.log(process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL)
+const res = await fetch(`http://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}/api/triviab`)
 const data = await res.json()
 
 console.log(data)

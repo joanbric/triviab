@@ -1,10 +1,10 @@
 import 'server-only'
 import type { Option, Slide, Triviab, SlideType } from '@/types.ts'
 import { NextRequest, NextResponse } from 'next/server'
-import { turso, type ResultSet } from '@/lib/turso'
+import { turso } from '@/lib/turso'
 import { randomUUID } from 'crypto'
 
-export async function getTriviab(id: string): Promise<Triviab | null> {
+async function getTriviab(id: string): Promise<Triviab | null> {
   // Obtener trivia
   const triviaRes = await turso.execute({
     sql: 'SELECT id, title FROM trivia WHERE id = ?',

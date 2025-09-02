@@ -1,20 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server'
 import redis from '@/lib/redis'
-import type { Triviab } from '@/types.ts'
+// import type { Triviab } from '@/types.ts'
 
-async function saveUserAnswer(
-  roomId: string,
-  questionId: string,
-  userId: string,
-  answer: string,
-  correct: boolean,
-  milisecondsTaken: number
-) {
-  const key = `trivia:${roomId}:answers:${questionId}`
-  const value = JSON.stringify({ answer, correct, milisecondsTaken })
+// async function saveUserAnswer(
+//   roomId: string,
+//   questionId: string,
+//   userId: string,
+//   answer: string,
+//   correct: boolean,
+//   milisecondsTaken: number
+// ) {
+//   const key = `trivia:${roomId}:answers:${questionId}`
+//   const value = JSON.stringify({ answer, correct, milisecondsTaken })
 
-  await redis.hset(key, userId, value)
-}
+//   await redis.hset(key, userId, value)
+// }
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)

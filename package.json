@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --experimental-transform-types server.ts",
     "build": "next build",
-    "start": "next start",
+    "start": "node --experimental-transform-types server.ts",
     "lint": "next lint"
   },
   "dependencies": {

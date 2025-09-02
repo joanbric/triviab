@@ -15,9 +15,7 @@ export default function EditTriviabPage() {
   const setTriviabId = useTriviabState(useShallow((state) => state.setTriviabId))
   const setTitle = useTriviabState(useShallow((state) => state.setTitle))
   const addOption = useTriviabState(useShallow((state) => state.addOption))
-  const removeOption = useTriviabState(useShallow((state) => state.removeOption))
   const resetTriviab = useTriviabState(useShallow((state) => state.resetTriviab))
-  const options = useTriviabState(useShallow(useShallow((state) => state.options)))
   const setTriviabAction = useTriviabState(useShallow((state) => state.setTriviabAction))
   const action = useTriviabState(useShallow((state) => state.action))
   const getTriviab = useTriviabState(useShallow((state) => state.getTriviab))
@@ -53,6 +51,7 @@ export default function EditTriviabPage() {
         })
         setTitle(data.title)
       })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
