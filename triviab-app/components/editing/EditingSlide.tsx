@@ -2,10 +2,10 @@
 import MultiChoice from './question-types/MultiChoice'
 import TrueFalse from './question-types/TrueFalse'
 import { Action, SlideType } from '@/types'
-import { useTriviabState } from '@/state/triviab'
-import { ActionSlide } from '@/state/types'
+import { useTriviabState } from '@app/state/triviab'
+import { ActionSlide } from '@app/state/types'
 import { useShallow } from 'zustand/shallow'
-import DeleteIcon from '@/components/icons/Delete'
+import DeleteIcon from '@app/components/icons/Delete'
 
 export default function EditingSlide({ slide }: { slide: ActionSlide }) {
   const updateSlide = useTriviabState(useShallow((state) => state.updateSlide))

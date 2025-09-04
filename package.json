@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm --filter '**' dev",
+    "dev:ws": "pnpm --filter ws-server dev",
+    "dev:app": "pnpm --filter triviab-app dev",
     "build": "",
     "start": "",
     "lint": ""

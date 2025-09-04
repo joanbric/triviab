@@ -1,6 +1,6 @@
 'use client'
 
-import { type CommandType, cmdType } from '@/types.ts'
+import { type CommandType, cmdType } from '@/types'
 import { use, useEffect, useRef, useState } from 'react'
 import { io, Socket } from 'socket.io-client'
 
@@ -15,7 +15,7 @@ export default function TriviabPage({ params }: { params: Promise<{ slug: string
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    const socket = io('http://localhost:3000', {
+    const socket = io('http://localhost:3001', {
       query: { userid: userId, triviabId: id }
     })
 
@@ -131,7 +131,13 @@ export default function TriviabPage({ params }: { params: Promise<{ slug: string
 
         <button
           onClick={() => {
-            if (command) socketRef.current?.emit('message', command)
+            console.log('se envio el mensaje')
+            if (command) socketRef.current?.emit('message', {
+              cmd: cmdType.MESSAGE,
+              userId,
+              triviabId: id,
+              message: 'hola, este es un mensaje de prueba'
+            })
           }}
         >
           Enviar mensaje

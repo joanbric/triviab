@@ -1,5 +1,0 @@
-{
-  "/api/triviab/route": "app/api/triviab/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/triviab/page": "app/triviab/page.js"
-}

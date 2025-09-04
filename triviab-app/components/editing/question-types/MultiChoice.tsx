@@ -1,6 +1,6 @@
-import DislikeIcon from '@/components/icons/Dislike'
-import LikeIcon from '@/components/icons/Like'
-import { useTriviabState } from '@/state/triviab'
+import DislikeIcon from '@app/components/icons/Dislike'
+import LikeIcon from '@app/components/icons/Like'
+import { useTriviabState } from '@app/state/triviab'
 import { Action } from '@/types'
 import {useShallow} from 'zustand/react/shallow'
 

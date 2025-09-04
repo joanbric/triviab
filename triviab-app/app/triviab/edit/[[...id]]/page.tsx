@@ -1,10 +1,10 @@
 'use client'
-import EditingSlide from '@/components/editing/EditingSlide'
+import EditingSlide from '@app/components/editing/EditingSlide'
 import { Triviab, Slide, Option, SlideType } from '@/types'
 import { useEffect } from 'react'
 import { useParams } from 'next/navigation'
-import { useTriviabState } from '@/state/triviab'
-import type { ActionSlide } from '@/state/types'
+import { useTriviabState } from '@app/state/triviab'
+import type { ActionSlide } from '@app/state/types'
 import { useShallow } from 'zustand/react/shallow'
 
 export default function EditTriviabPage() {
