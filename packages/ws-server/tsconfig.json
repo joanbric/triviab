@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "es2022",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "composite": true,
+    "noEmit": false,
+    "baseUrl": ".",
+  },
+  "references": [
+    {
+      "path": "../types"
+    }
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

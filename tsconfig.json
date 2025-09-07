@@ -12,10 +12,15 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["*"],
-      "@app/*": ["triviab-app/*"],
-      "@ws/*": ["ws-server/*"]
+      "@app/*": ["packages/triviab-app/*"],
+      "@ws/*": ["ws-server/*"],
     }
   },
   "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "references": [
+    {"path": "packages/triviab-app"},
+    {"path": "packages/ws-server"},
+    {"path": "packages/types"}
+  ]
 }
