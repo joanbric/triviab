@@ -10,7 +10,6 @@
     "composite": true,
     "noEmit": false,
     "baseUrl": ".",
-    "types": ["node", "express", "socket.io"]
   },
   "references": [
     {
