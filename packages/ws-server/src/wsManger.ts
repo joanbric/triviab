@@ -1,5 +1,5 @@
 import { Server, Socket } from 'socket.io'
-import { type CommandType, cmdType } from '@triviab/types/dist'
+import { type CommandType, cmdType } from '@triviab/types'
 interface CustomSocket extends Socket {
   user: any
 }

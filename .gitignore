@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/triviab-app/.next/
+/packages/triviab-app/.next/
 /out/
 
 # production

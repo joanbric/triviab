@@ -1,5 +1,5 @@
 import { createServer } from 'http'
-import io from './wsManger'
+import io from './wsManger.js'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import express from 'express'
