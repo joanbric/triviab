@@ -1,5 +1,7 @@
 {
   "/api/triviab/route": "app/api/triviab/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/triviab/page": "app/triviab/page.js",
   "/triviab/edit/[[...id]]/page": "app/triviab/edit/[[...id]]/page.js",
   "/triviab/[...slug]/page": "app/triviab/[...slug]/page.js"
 }

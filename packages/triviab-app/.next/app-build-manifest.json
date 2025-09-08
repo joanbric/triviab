@@ -6,15 +6,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/triviab/edit/[[...id]]/page": [
+    "/triviab/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/triviab/edit/[[...id]]/page.js"
+      "static/chunks/app/triviab/page.js"
     ],
     "/api/triviab/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/triviab/route.js"
+    ],
+    "/triviab/edit/[[...id]]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/triviab/edit/[[...id]]/page.js"
     ],
     "/triviab/[...slug]/page": [
       "static/chunks/webpack.js",
