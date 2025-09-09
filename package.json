@@ -10,6 +10,7 @@
     "build:all": "pnpm --filter '**' build",
     "build:ws": "pnpm --filter ws-server build",
     "build:app": "pnpm --filter triviab-app build",
+    "build:types": "pnpm --filter types build",
     "start:all": "pnpm --filter '**' start",
     "start:ws": "pnpm --filter ws-server start",
     "start:app": "pnpm --filter triviab-app start",
