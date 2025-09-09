@@ -10,12 +10,10 @@
     "composite": true,
     "noEmit": false,
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "lib": ["ES2022"],
+    "types": ["node", "express", "socket.io"]
   },
-  "references": [
-    {
-      "path": "../types"
-    }
-  ],
   "include": [
     "src/**/*"
   ]
